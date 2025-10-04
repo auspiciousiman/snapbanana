@@ -32,6 +32,8 @@
     falApiKey: false
     image: false
     spinner: false
+    supabaseApiKey: false
+    supabaseUrl: false
     textDisplay: false
   ScriptTypesHidden:
     {}
@@ -39,6 +41,8 @@
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - falApiKey: ""
+      supabaseUrl: ""
+      supabaseApiKey: ""
       image: !<reference.Image> 00000000-0000-0000-0000-000000000000
       textDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
       asrQueryController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
@@ -52,6 +56,14 @@
     - '// @ui {"widget":"label", "label":"Image Editing with Nano Banana (fal.ai)"}'
     - '// @ui {"widget":"separator"}'
     - '// @input string falApiKey {"hint":"Your fal.ai API key"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"Supabase Storage (Optional)"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input string supabaseUrl {"hint":"Supabase Project URL (e.g., https://abc.supabase.co)"}'
+    - '// @input string supabaseApiKey {"hint":"Supabase API Key (anon/public key)"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"Scene References"}'
+    - '// @ui {"widget":"separator"}'
     - // @input Component.Image image
     - // @input Component.Text textDisplay
     - // @input AssignableType asrQueryController
