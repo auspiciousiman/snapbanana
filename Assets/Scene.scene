@@ -3615,7 +3615,7 @@
       meshStateHoverMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       meshStateIdleMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       persistentPinchedState: false
-      defaultIcon: !<reference.Texture> ce260221-adc8-4fac-abed-74c22d8f9beb
+      defaultIcon: !<reference.Texture> f23564b1-7e7d-456a-9698-7ee54cb1904f
       onIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
@@ -3817,9 +3817,11 @@
     {}
   ScriptInputs:
     "":
+      falApiKey: ""
       image: !<reference.Image> 4f15c769-914c-4dfb-97d4-0901ec89d78a
       textDisplay: !<reference.Text> 1823ef19-acfa-42a6-a55a-8e3282dccb5c
       asrQueryController: !<MappingBased.AssignableType> 05b2200d-d356-4b4a-9b42-94932fb2ab3b
+      cameraButton: !<MappingBased.AssignableType_1> 5f942cc5-3dd6-468b-8d99-871c8d4e9f62
       spinner: !<reference.SceneObject> 85365650-4860-4e4b-9561-da197d9e1c40
   ScriptTypes:
     "":

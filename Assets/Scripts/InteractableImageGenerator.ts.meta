@@ -28,6 +28,8 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     asrQueryController: false
+    cameraButton: false
+    falApiKey: false
     image: false
     spinner: false
     textDisplay: false
@@ -36,18 +38,22 @@
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - image: !<reference.Image> 00000000-0000-0000-0000-000000000000
+    - falApiKey: ""
+      image: !<reference.Image> 00000000-0000-0000-0000-000000000000
       textDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
       asrQueryController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      cameraButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
       spinner: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - '// @ui {"widget":"separator"}'
-    - '// @ui {"widget":"label", "label":"Using Gemini 2.5 Flash Image (Nano Banana) for image generation"}'
+    - '// @ui {"widget":"label", "label":"Image Editing with Nano Banana (fal.ai)"}'
     - '// @ui {"widget":"separator"}'
+    - '// @input string falApiKey {"hint":"Your fal.ai API key"}'
     - // @input Component.Image image
     - // @input Component.Text textDisplay
     - // @input AssignableType asrQueryController
+    - // @input AssignableType_1 cameraButton
     - // @input SceneObject spinner

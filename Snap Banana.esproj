@@ -29,6 +29,7 @@ metaInfo:
     []
   lensName: Snap Banana
   lensDescriptors:
+    - EXPERIMENTAL_API
     - GEN_AI_ICON
   lensApplicability:
     - Front
