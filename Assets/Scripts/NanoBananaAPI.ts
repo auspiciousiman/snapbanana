@@ -17,19 +17,20 @@ export class NanoBananaAPI {
    */
   async editImage(texture: Texture, prompt: string): Promise<Texture> {
     return new Promise((resolve, reject) => {
-      // Convert texture to base64 asynchronously
+      // Convert texture to base64 asynchronously with medium quality to reduce size
       Base64.encodeTextureAsync(
         texture,
         (base64Image) => {
           try {
-            const dataUrl = `data:image/png;base64,${base64Image}`;
+            const dataUrl = `data:image/jpeg;base64,${base64Image}`;
 
             // Prepare request body
             const requestBody = {
               prompt: prompt,
               image_urls: [dataUrl],
               num_images: 1,
-              output_format: "png",
+              output_format: "jpeg",
+              sync_mode: false,
             };
 
             // Create fetch request
@@ -86,8 +87,8 @@ export class NanoBananaAPI {
         () => {
           reject("Failed to encode texture to base64");
         },
-        CompressionQuality.HighQuality,
-        EncodingType.Png
+        CompressionQuality.IntermediateQuality,
+        EncodingType.Jpg
       );
     });
   }
@@ -101,15 +102,18 @@ export class NanoBananaAPI {
       const remoteMediaModule: RemoteMediaModule = require("LensStudio:RemoteMediaModule");
 
       try {
+        print(`Downloading edited image from: ${url}`);
         const resource = remoteServiceModule.makeResourceFromUrl(url);
 
         if (resource) {
           remoteMediaModule.loadResourceAsImageTexture(
             resource,
             (texture) => {
+              print("Edited image downloaded successfully");
               resolve(texture);
             },
             (error) => {
+              print(`Image download failed. URL: ${url}, Error: ${error}`);
               reject(`Failed to load image texture: ${error}`);
             }
           );
