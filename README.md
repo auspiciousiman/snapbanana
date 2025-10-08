@@ -6,7 +6,9 @@ Built on top of Snap's AI Playground sample application.
 
 ## Demo
 
-![Demo Video](demo/snapbanana.mp4)
+<video src="https://github.com/auspiciousiman/snapbanana/raw/main/demo/snapbanana.mp4" controls></video>
+
+_[Click here if video doesn't play](https://github.com/auspiciousiman/snapbanana/raw/main/demo/snapbanana.mp4)_
 
 ## Features
 
