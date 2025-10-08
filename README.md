@@ -6,9 +6,9 @@ Built on top of Snap's AI Playground sample application.
 
 ## Demo
 
-**[▶️ Watch the demo video](https://github.com/auspiciousiman/snapbanana/raw/main/demo/snapbanana.mp4)**
+[![Watch the demo](https://img.youtube.com/vi/uDxG-Ly63mI/maxresdefault.jpg)](https://youtu.be/uDxG-Ly63mI)
 
-_See Snap Banana in action - voice-activated image editing on Spectacles!_
+_Click to watch Snap Banana in action - voice-activated image editing on Spectacles!_
 
 ## Features
 
