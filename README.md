@@ -4,6 +4,10 @@ Snap Banana is like having photoshop on your head. Powered by Nano Banana and ru
 
 Built on top of Snap's AI Playground sample application.
 
+## Demo
+
+https://github.com/auspiciousiman/snapbanana/assets/demo/snapbanana.mp4
+
 ## Features
 
 - **Voice-Activated Image Generation**: Generate images using voice commands with Gemini AI
